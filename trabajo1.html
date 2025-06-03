@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taquería Las Tablitas</title>
+<style>
+
+</style>
+   <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>Taquería Las Tablitas</header>
+
+    <div class="container">
+        <section class="menu">
+            <h2>Nuestro Menú</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="tacosdepastor1.jpg" alt="Taco al pastor">
+                    <h3>Taco al pastor</h3>
+                    <p>Delicioso taco con carne de cerdo adobada y piña.</p>
+                    <span>$15 MXN</span>
+                </div>
+                <div class="menu-item">
+                    <img src="tacosdesuadero1.jpg" alt="Taco de suadero">
+                    <h3>Taco de suadero</h3>
+                    <p>Suave y jugosa carne de res con cebolla y cilantro.</p>
+                    <span>$18 MXN</span>
+                </div>
+                <div class="menu-item">
+                    <img src="tacosdebistec1.jpg" alt="Taco de bistec">
+                    <h3>Taco de bistec</h3>
+                    <p>Corte de carne asada a la parrilla con un toque de limón.</p>
+                    <span>$20 MXN</span>
+                </div>
+                <div class="menu-item">
+                    <img src="aguadejamaica1.webp" alt="Agua de Jamaica">
+                    <h3>Agua de Jamaica</h3>
+                    <p>Refrescante agua de jamaica natural, endulzada al gusto.</p>
+                    <span>$20 MXN</span>
+                </div>
+                <div class="menu-item">
+                    <img src="agua-de-horchata.webp" alt="Agua de Horchata">
+                    <h3>Agua de Horchata</h3>
+                    <p>Deliciosa agua de horchata con canela y vainilla.</p>
+                    <span>$20 MXN</span>
+                </div>
+                <div class="menu-item">
+                    <img src="cocacola1.jpg" alt="Coca-Cola">
+                    <h3>Coca-Cola</h3>
+                    <p>Bebida refrescante bien fría.</p>
+                    <span>$25 MXN</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <h2>Conoce nuestra taquería</h2>
+            <video width="100%" autoplay loop muted playsinline>
+                <source src="video taqueria" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </section>
+
+        <section class="pedido">
+            <h2>Haz tu pedido ahora</h2>
+            <form>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                
+                <select id="producto" name="producto">
+                    <option value="pastor">Taco al pastor</option>
+                    <option value="suadero">Taco de suadero</option>
+                    <option value="bistec">Taco de bistec</option>
+                    <option value="jamaica">Agua de Jamaica</option>
+                    <option value="horchata">Agua de Horchata</option>
+                    <option value="coca">Coca-Cola</option>
+                </select>
+
+                <input type="number" id="cantidad" name="cantidad" min="1" placeholder="Cantidad" required>
+
+                <button type="submit">Realizar Pedido</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
